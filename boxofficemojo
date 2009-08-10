@@ -9,7 +9,7 @@ CmdUtils.CreateCommand({
   help: "TODO",
   author: {name: "Ash Lux", email: "ashlux@gmail.com"},
   license: "GPL",
-  homepage: "http://www.ashlux.com/wordpress/ubiquity",
+  homepage: "http://www.ashlux.com/wordpress/ubiquity-commands",
   arguments: [{role: 'object', nountype: noun_arb_text}],
   preview: function preview(pblock, args) {
     pblock.innerHTML = "Search for movie <b>" + args.object.html + "</b>.";
@@ -30,7 +30,7 @@ CmdUtils.CreateCommand({
   help: "TODO",
   author: {name: "Ash Lux", email: "ashlux@gmail.com"},
   license: "GPL",
-  homepage: "http://www.ashlux.com/wordpress/ubiquity",
+  homepage: "http://www.ashlux.com/wordpress/ubiquity-commands",
   preview: function preview(pblock, args) {
     pblock.innerHTML = "Show top weekend movies.";
   },
