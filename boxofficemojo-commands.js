@@ -1,7 +1,3 @@
-BOXOFFICEMOJO_BASE_URL = "http://boxofficemojo.com/";
-
-/* Search Box Office Mojo. */
-/* http://boxofficemojo.com/search/?q=Search Phrase */
 CmdUtils.CreateCommand({
   names: ["boxofficemojo", "bom", "box office mojo"],
   icon: "http://boxofficemojo.com/favicon.ico",
@@ -15,14 +11,10 @@ CmdUtils.CreateCommand({
     pblock.innerHTML = "Search for movie <b>" + args.object.html + "</b>.";
   },
   execute: function execute(args) {
-    Utils.openUrlInBrowser(BOXOFFICEMOJO_BASE_URL + "search/?q=" + args.object.text);
+    Utils.openUrlInBrowser("http://boxofficemojo.com/search/?q=" + args.object.text);
   }
 });
 
-BOXOFFICEMOJO_WEEKEND_CHART = BOXOFFICEMOJO_BASE_URL + "/weekend/chart/";
-
-/* Show top weekend chart */
-/* http://boxofficemojo.com/weekend/chart/ */
 CmdUtils.CreateCommand({
   names: ["boxofficemojo top weekend movies", "bom top weekend movies", "box office mojo top weekend movies", "top weekend movies"],
   icon: "http://boxofficemojo.com/favicon.ico",
@@ -35,7 +27,7 @@ CmdUtils.CreateCommand({
     pblock.innerHTML = "Show top weekend movies.";
   },
   execute: function execute(args) {
-    Utils.openUrlInBrowser(BOXOFFICEMOJO_WEEKEND_CHART);
+    Utils.openUrlInBrowser("http://boxofficemojo.com/weekend/chart/");
   }
 });
 
