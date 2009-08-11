@@ -1,3 +1,4 @@
+/* Firefox Ubiquity Box Office Mojo search command */
 CmdUtils.CreateCommand({
   names: ["boxofficemojo", "bom", "box office mojo"],
   icon: "http://boxofficemojo.com/favicon.ico",
@@ -15,6 +16,7 @@ CmdUtils.CreateCommand({
   }
 });
 
+/* Firefox Ubiquity Box Office Mojo top weekend movies command */
 CmdUtils.CreateCommand({
   names: ["boxofficemojo top weekend movies", "bom top weekend movies", "box office mojo top weekend movies"],
   icon: "http://boxofficemojo.com/favicon.ico",

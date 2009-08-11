@@ -1,6 +1,6 @@
 CmdUtils.CreateCommand({
   names: ["roll"],
-  icon: "http://boxofficemojo.com/favicon.ico",
+  icon: "http://ashlux.com/favicon.ico",
   description: "Roll a die with the given ",
   help: "TODO",
   author: {name: "Ash Lux", email: "ashlux@gmail.com"},
